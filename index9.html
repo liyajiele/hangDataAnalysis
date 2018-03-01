@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+</head>
+<style>
+	.bigbox{
+		width: 100vw;
+		height: 100vh;
+		background: url(img/back.jpg);
+		position: relative;
+		background-size: contain;
+	}
+	.top{
+		height: 5rem;
+	    position: absolute;
+	    top: 0.5rem;
+	    width: 6rem;
+	    left: 0.75rem;
+	}
+	.top p{
+		color: #fff;
+    	font-size: 0.15rem;
+	}
+	.map{
+		width: 5rem;
+		margin-left: 0.5rem;
+	}
+	.bili{
+		width: 1.3rem;
+	    top: 4rem;
+	    position: absolute;
+	    left: 0rem;
+	}
+	.topb{
+	    top: 6.5rem;
+	}
+	.mapa{
+		width: 6rem;
+		margin-left: 0;
+	}
+	.arrow{
+	    position: absolute;
+	    top: 12rem;
+	    width: 0.5rem;
+	    left: 3.5rem;
+	}
+	.arrow img{
+		width: 100%;
+	}
+</style>
+<body>
+	<div class="bigbox">
+		<div class="top">
+			<p>机票客源地</p>
+			<img src="img/maptop.png" alt="" class="map"/>
+			<img src="img/bili.png" alt="" class="bili"/>
+		</div>
+		
+		<div class="top topb">
+			<p>酒店客源地</p>
+			<img src="img/map.png" alt="" class="mapa"/>
+			<img src="img/bili.png" alt="" class="bili"/>
+		</div>
+		<div class="arrow">
+			<img src="img/arrow.png"/>
+		</div>
+	</div>
+</body>
+</html>

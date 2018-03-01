@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+</head>
+<style>
+	.bigbox{
+		width: 100vw;
+		height: 100vh;
+		background: url(img/back.jpg);
+		position: relative;
+		background-size: contain;
+	}
+	
+	
+	.arrow{
+	    position: absolute;
+	    top: 12rem;
+	    width: 0.5rem;
+	    left: 3.5rem;
+	}
+	.arrow img{
+		width: 100%;
+	}
+</style>
+<body>
+	<div class="bigbox">
+		
+		
+		<div class="arrow">
+			<img src="img/arrow.png" alt="" />
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+</head>
+<style>
+	.bigbox{
+		width: 100vw;
+		height: 100vh;
+		background: url(img/back.jpg);
+		position: relative;
+		background-size: contain;
+	}
+	
+	.top{
+		width: 6.8rem;
+	    position: absolute;
+	    top: 0.5rem;
+	    left: 0.35rem;
+	    background: url(img/zhai.png);
+	    background-size: contain;
+	    font-size: 0.25rem;
+	    color: #6AE7FF;
+	    text-align: center;
+	    line-height: 1.5rem;
+	    height: 1.5rem;
+	}
+	.pai{
+	    width: 6.8rem;
+	    position: absolute;
+	    top: 2.3rem;
+	    left: 0.35rem;
+	}
+	.pai img{
+		width: 100%;
+	}
+	.zi{
+		color: #fff;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    top: 7.3rem;
+	    width: 6.8rem;
+	    left: 0.35rem;
+	    line-height: 0.5rem;
+	    letter-spacing: 0.019rem;
+	}
+	.zi span{
+		color: #6AE7FF;
+		font-size: 0.3rem;
+	}
+	.topa{
+		top: 9rem;
+	}
+	.zia{
+		top: 10.8rem;
+	}
+	.arrow{
+	    position: absolute;
+	    top: 12rem;
+	    width: 0.5rem;
+	    left: 3.5rem;
+	}
+	.arrow img{
+		width: 100%;
+	}
+</style>
+<body>
+	<div class="bigbox">
+		
+		<div class="top">
+			游客流量再创新高
+		</div>
+		
+		<div class="pai">
+			<img src="img/pai.png" alt="" />
+		</div>
+		<p class="zi">8天假期，杭州市共接待国内外游客<span>XX万</span>人次，同比增长<span>XX%</span>，客流高峰出现在10月2日，随着拼假旅游的流行，今年客流高峰提前，并呈现“前高后低”趋势。</p>
+		
+		<div class="top topa">
+			旅游消费稳步提升   长三角游客是刷卡主力
+		</div>
+		
+		<p class="zi zia">今年国庆，中秋黄金周来杭州游客刷卡总金额<span>XXX亿</span>元，同比增长XX%。移动支付渗透杭州吃住行游购娱各行业，2017国庆中秋长假移动支付比例超<span>60%</span>。</p>
+		<div class="arrow">
+			<img src="img/arrow.png" alt="" />
+		</div>
+	</div>
+</body>
+</html>

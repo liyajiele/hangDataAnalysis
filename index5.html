@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+	<style>
+		.bigbox{
+			width: 100vw;
+			height: 100vh;
+			background: url(img/back.jpg);
+			position: relative;
+			background-size: contain;
+		}
+		.top{
+			width: 7rem;
+		    position: absolute;
+		    top: 0.6rem;
+		    left: 0.25rem;
+		}
+		.top img{
+			display: block;
+		    float: left;
+		    width: 0.5rem;
+		}
+		.top p{
+		    width: 6.2rem;
+		    color: #fff;
+		    font-size: 0.2rem;
+		    margin-left: 0.2rem;
+		    line-height: 0.5rem;
+		    float: left;
+		}
+		.top p span{
+			font-size: 0.3rem;
+		}
+		.bigimg{
+			position: absolute;
+		    top: 2rem;
+		    width: 5rem;
+		    left: 1.25rem;
+		}
+		.bigimg img{
+			width: 100%;
+		}
+		.topa{
+			top: 7rem;
+		}
+		.biao{
+			width: 6.75rem;
+		    position: absolute;
+		    top: 7.7rem;
+		    left: 0.35rem;
+		}
+		.biao img{
+			width: 100%;
+		}
+		.con{
+			position: absolute;
+		    top: 0.2rem;
+		    width: 6rem;
+		    left: -0.05rem;
+		    letter-spacing: 0.02rem;
+		}
+		.con li{
+			color: #fff;
+		    font-size: 0.15rem;
+		    float: left;
+		    margin-top: 0.12rem;
+		    width: 100%;
+		}
+		.con li span{
+			float: left;
+		    margin-right: 0.12rem;
+		    width: 1.2rem;
+		    text-align: right;
+		}
+		.biao .a{
+			width: 4.5rem;
+		}
+		.biao .b{
+			width: 3.8rem;
+		}
+		.biao .c{
+			width: 3.3rem;
+		}
+		.biao .d{
+			width: 2.9rem;
+		}
+		.biao .e{
+			width: 2.6rem;
+		}
+		.biao .f{
+			width: 2.3rem;
+		}
+		.biao .g{
+			width: 2rem;
+		}
+		.biao .h{
+			width: 1.5rem;
+		}
+		.biao .i{
+			width: 1rem;
+		}
+		.biao .j{
+			width:0.8rem;
+		}
+		.biao .k{
+			width: 0.4rem;
+		}
+		.biao .l{
+			width: 0.2rem;
+		}
+		.con li img{
+			float: left;
+			height:0.15rem;
+		}
+		.arrow{
+		    position: absolute;
+		    top: 12rem;
+		    width: 0.5rem;
+		    left: 3.5rem;
+		}
+		.arrow img{
+			width: 100%;
+		}
+	</style>
+	<body>
+		<div class="bigbox">
+			<div class="top">
+				<img src="img/btn.png" alt="" />
+				<p>出门看天气，游客对“天气”搜索热度最高，自助游搜索量猛增，今年搜索量占比是去年同期的<span>18</span>倍。</p>
+			</div>
+			
+			<div class="bigimg">
+				<img src="img/bigimg.png"/>
+			</div>
+			
+			<div class="top topa">
+				<img src="img/btn.png" alt="" />
+				<p>旅游产品方面，乡村生态游成为休闲度假新选择。</p>
+			</div>
+			
+			<div class="biao">
+				<img src="img/biao.png" alt="" />
+				<ul class="con">
+					<li><span>生态游</span><img src="img/qian.png" alt="" class="a"/></li>
+					<li><span>主题公园类</span><img src="img/shen.png" alt="" class="b"/></li>
+					<li><span>博物馆类</span><img src="img/qian.png" class="c"/></li>
+					<li><span>动物公园类</span><img src="img/qian.png" alt="" class="d"/></li>
+					<li><span>古镇古村</span><img src="img/shen.png" alt="" class="e"/></li>
+					<li><span>温泉类</span><img src="img/qian.png" alt="" class="f"/></li>
+					<li><span>其他</span><img src="img/shen.png" class="g"/></li>
+					<li><span>城市观光类</span><img src="img/qian.png" alt="" class="h"/></li>
+					<li><span>宗教类</span><img src="img/shen.png" alt="" class="i"/></li>
+					<li><span>周边休闲类</span><img src="img/qian.png" class="j"/></li>
+					<li><span>岛屿</span><img src="img/qian.png" alt="" class="k"/></li>
+					<li><span>郊游及乡村游</span><img src="img/shen.png" alt="" class="l"/></li>
+				</ul>
+			</div>
+			
+			<div class="arrow">
+				<img src="img/arrow.png" alt="" />
+				
+			</div>
+		</div>
+	</body>
+</html>

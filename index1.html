@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+</head>
+<style>
+	.bigbox{
+		width: 100vw;
+		height: 100vh;
+		background: url(img/back.jpg);
+		position: relative;
+		background-size: contain;
+	}
+	.top{
+		width: 7rem;
+	    height: 2.1rem;
+	    position: absolute;
+	    top: 0.39rem;
+	    background: url(img/topbei.png);
+	    background-size: contain;
+	    left: 0.25rem;
+	}
+	.zi{
+		color: #6ae7ff;
+	    font-size: 0.18rem;
+	    width: 90%;
+	    height: auto;
+	    margin: 0 auto;
+	    margin-top: 0.5rem;
+	    line-height: 0.5rem;
+	}
+	.renlist{
+		width: 6.5rem;
+	    position: absolute;
+	    top: 3rem;
+	    left: 0.5rem;
+	    height: 0.57rem;
+	}
+	.renlist li{
+	    float: left;
+	    height: 0.8rem;
+	    margin-right: 0.05rem;
+	}
+	.renlist li img{
+		height: 100%;
+	    display: block;
+	    float: left;
+	}
+	.renlist .last{
+		width: 0.6rem;
+	    height: 0.4rem;
+	    margin-left: 0.25rem;
+	}
+	.renlist .last img{
+		width: 100%;
+		height: 0.4rem;
+		display: block;
+		float: left;
+	}
+	
+	.renlist .last span{
+		font-size: 0.2rem;
+	    color: #6AE7FF;
+	    display: block;
+	    margin-top: 0.1rem;
+	    width: 100%;
+	    height: 0.2rem;
+	    float: left;
+	    text-align: center;
+	}
+	.zione{
+		width: 6.7rem;
+	    height: auto;
+	    color: #fff;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    top: 4rem;
+	    left: 0.44rem;
+	    text-align: center;
+	}
+	.onet{
+		font-size: 0.12rem;
+		color: #fff;
+	}
+	span{
+		font-size: 0.3rem;
+    	color: #6AE7FF;
+	}
+	
+	.imgone{
+		width: 2rem;
+	    position: absolute;
+	    top: 5rem;
+	    left: 2.75rem;
+	}
+	.imgone img{
+		width: 100%;
+	}
+	.zitwo{
+		width: 6.5rem;
+	    color: #fff;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    top: 6.5rem;
+	    left: 0.5rem;
+	    text-align: center;
+	}
+	
+	.imgtwo{
+		top: 7.2rem;
+	}
+	.zithree{
+		top: 8.8rem;
+	}
+	.imgthree{
+		top: 9.5rem;
+	}
+	.zifour{
+		width: 7.2rem;
+		top: 11rem;
+		left: 0.15rem;
+	}
+	.arrow{
+	    position: absolute;
+	    top: 11.54rem;
+	    width: 0.5rem;
+	    left: 3.5rem;
+	}
+	.arrow img{
+		width: 100%;
+	}
+</style>
+<body>
+	<div class="bigbox">
+		<div class="top">
+			<div class="zi">受超长假期和“后峰会效应”影响，2017年国庆中秋长假期间旅游经济持续增长，各项指标同步增长。</div>
+		</div>
+		
+		<ul class="renlist">
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/bairen.png" alt="" /></li>
+			<li><img src="img/lanren.png" alt="" /></li> 
+			<li><img src="img/lanren.png" alt="" /></li> 
+			<li><img src="img/lanren.png" alt="" /></li> 
+			<li class="last"><img src="img/home.png" alt="" /><span>13%</span></li>
+		</ul>
+	
+		<p class="zione">2017年国庆中秋长假，杭州市共接待国内外游客<span class="oneo">1110万</span>人次<span class="onet">（不含900万市民游客）</span></p>
+		
+		<div class="imgone"><img src="img/money.png" alt="" /></div>
+		
+		<p class="zitwo">累计实现旅游收入<span>XXXX亿</span>元，同比增长<span>XX%</span></p>
+		
+		<div class="imgone imgtwo"><img src="img/people.png" alt="" /></div>
+		
+		<p class="zitwo zithree">接待中外游客<span>XXXX万</span>人次，同比增长<span>XX%</span></p>
+		
+		<div class="imgone imgthree"><img src="img/city.png" alt="" /></div>
+		
+		<p class="zitwo zifour">城市搜索热度日均超过<span>XXXX万</span>次，排名晋升全国第<span>4</span>位，上升<span>2</span>位</p>
+		
+		<div class="arrow"><img src="img/arrow.png" alt="" /></div>
+	</div>
+</body>
+</html>

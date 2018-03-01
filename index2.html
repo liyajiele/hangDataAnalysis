@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+</head>
+<style>
+	.bigbox{
+		width: 100vw;
+		height: 100vh;
+		background: url(img/back.jpg);
+		position: relative;
+	}
+	.top{
+		width: 7rem;
+	    height: 1.55rem;
+	    position: absolute;
+	    top: 0.5rem;
+	    background: url(img/zhai.png);
+	    background-size: contain;
+	    left: 0.25rem;
+	}
+	.topzi{
+		color: #6AE7FF;
+	    font-size: 0.28rem;
+	    width: 5rem;
+	    margin-top: 0.4rem;
+	    margin-left: 0.5rem;
+	}
+	.topzia{
+		width: 100%;
+	    text-align: center;
+	    color: #6AE7FF;
+	    font-size: 0.15rem;
+	}
+	.topzia span{
+		font-size: 0.3rem;
+	}
+	.zi{
+		width: 6rem;
+	    position: absolute;
+	    top: 2.3rem;
+	    color: #fff;
+	    font-size: 0.15rem;
+	    left: 0.75rem;
+	    line-height: 0.5rem;
+	}
+	.zi span{
+		font-size: 0.3rem;
+		color: #6AE7FF;
+	}
+	.biaobei{
+		width: 6.5rem;
+	    position: absolute;
+	    top: 3.5rem;
+	    left: 0.5rem;
+	}
+	.biaobei img{
+		width: 100%;
+	}
+	.list{
+		position: absolute;
+	    top: 0;
+	    width: 6rem;
+	    height: 100%;
+	    left: 0.5rem;
+	}
+	.list li{
+	    font-size: 0.15rem;
+	    color: #fff;
+	    margin-top: 0.2rem;
+        float: left;
+    	width: 100%;
+    	height: 0.5rem;
+	}
+	.list .right{
+		float: right;
+		margin-right: 0.2rem;
+	}
+	.list li span{
+		float: left;
+	}
+	.list li i{
+		float: left;
+		display: block;
+		height: 0.22rem;
+	    background: #fff;
+	    opacity: 0.5;
+	    margin-left: 0.2rem;
+	    margin-top: 0.05rem;
+	}
+	.list .lan{
+		color: #6AE7FF;
+	}
+	.one{
+		width: 4rem;
+	}
+	.two{
+		width: 3.5rem;
+	}
+	.three{
+		width: 1.7rem;
+	}
+	.list .four{
+		width: 1.5rem;
+		background: #6AE7FF;
+	}
+	.biaodi{
+		width: 6.5rem;
+	    position: absolute;
+	    top: 7rem;
+	    left: 0.5rem;
+	}
+	
+	.biaodi img{
+		width: 100%;
+	}
+	.ci{
+		color: #fff;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    top: 0.3rem;
+	    left: 0.5rem;
+	}
+	.nian{
+		color: #fff;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    top: 0.2rem;
+	    right: 0.5rem;
+	}
+	.nian .landian{
+		background: #6AE7FF;
+	}
+	.nian span{
+		float: left;
+	}
+	.nian i{
+	    width: 0.1rem;
+	    height: 0.1rem;
+	    background: #fff;
+	    display: block;
+	    float: left;
+	    margin-top: 0.1rem;
+	    margin-right: 0.1rem;
+	    margin-left: 0.2rem;
+	}
+	.tiao{
+		position: absolute;
+	    top: 0;
+	    left: 0.5rem;
+	    width: 100%;
+	    height: 100%;
+	}
+	.tiao li{
+	    color: #fff;
+	    font-size: 0.15rem;
+	    width: 0.65rem;
+	    height: 100%;
+	    position: relative;
+	    float: left;
+	}
+	.tiao li p{
+	    top: 4rem;
+    	position: absolute;
+    	left: 0.15rem;
+	}
+	.tiao li .baibai{
+		height:1.95rem;
+	
+	}
+	.tiao li .lanlan{
+		height: 2.1rem;
+	}
+	.tiao li .baia{
+		height: 1.85rem;
+	}
+	.tiao li .lana{
+		height: 2.05rem;
+	}
+	.tiao li .baib{
+		height: 2rem;
+	}
+	.tiao li .lanb{
+		height: 2.35rem;
+	}
+	.tiao li .baic{
+		height: 1.95rem;
+	}
+	.tiao li .lanc{
+		height: 2.2rem;
+	}
+	.tiao li .baid{
+		height: 2.25rem;
+	}
+	.tiao li .land{
+		height: 2.7rem;
+	}
+	.tiao li .baie{
+		height: 1.8rem;
+	}
+	.tiao li .lane{
+		height: 2.2rem;
+	}
+	.tiao li .baif{
+		height: 2.05rem;
+	}
+	.tiao li .lanf{
+		height: 2.5rem;
+	}
+	.tiao li .baig{
+		height: 1.75rem;
+	}
+	.tiao li .lang{
+		height: 2.15rem;
+	}
+	.tiao li .baih{
+		height: 1.95rem;
+	}
+	.tiao li .lanh{
+		height: 2.35rem;
+	}
+	.tiao li .bai{
+		width: 0.14rem;
+	    background: #fff;
+	    opacity: 0.5;
+	    position: absolute;
+	    bottom: 0.75rem;
+	    left: 0.2rem;
+	}
+	.tiao li .lan{
+	    width: 0.14rem;
+	    background: #6ae7ff;
+	    opacity: 0.5;
+	    position: absolute;
+	    bottom: 0.75rem;
+	    left: 0.4rem;
+	}
+	
+	.samll{
+		font-size: 0.15rem;
+	    position: absolute;
+	    top: 11.6rem;
+	    color: #fff;
+	    width: 100%;
+	    text-align: center;
+	}
+	.arrow{
+	    position: absolute;
+	    top: 12rem;
+	    width: 0.5rem;
+	    left: 3.5rem;
+	}
+	.arrow img{
+		width: 100%;
+	}
+</style>
+<body>
+	<div class="bigbox">
+		<div class="top">
+			<p class="topzi">城市搜索热度</p>
+			<p class="topzia">杭州城市搜索热度持续提升，跃居全国第<span>4</span>.</p>
+		</div>
+		
+		<p class="zi">"杭州"搜索热度高点出现在10.X，达到<span>XXXX</span>次。搜索量较去年同期出现<span>上升</span>趋势。</p>
+	
+		<div class="biaobei">
+			<img src="img/biaobei.png"/>
+			<ul class="list">
+				<li><span>北京</span><i class="one"></i><span class="right">2.42%</span></li>
+				<li><span>上海</span><i class="two"></i><span class="right">2.12%</span></li>
+				<li><span>西安</span><i class="three"></i><span class="right">1.15%</span></li>
+				<li class="lan"><span>杭州</span><i class="four"></i><span class="right">1.05%</span></li>
+			</ul>
+		</div>
+		
+		<div class="biaodi">
+			<img src="img/biaodi.png"/>
+			<div class="ci">(万次)</div>
+			<div class="nian"><i></i><span>2016年</span><i class="landian"></i><span>2017年</span></div>
+			<ul class="tiao">
+				<li>
+					<p>10.1</p>
+					<div class="bai baibai"></div>
+					<div class="lan lanlan"></div>
+				</li>
+				<li>
+					<p>10.2</p>
+					<div class="bai baia"></div>
+					<div class="lan lana"></div>
+				</li>
+				<li>
+					<p>10.3</p>
+					<div class="bai baib"></div>
+					<div class="lan lanb"></div>
+				</li>
+				<li>
+					<p>10.4</p>
+					<div class="bai baic"></div>
+					<div class="lan lanc"></div>
+				</li>
+				<li>
+					<p>10.5</p>
+					<div class="bai baid"></div>
+					<div class="lan land"></div>
+				</li>
+				<li>
+					<p>10.6</p>
+					<div class="bai baie"></div>
+					<div class="lan lane"></div>
+				</li>
+				<li>
+					<p>10.7</p>
+					<div class="bai baif"></div>
+					<div class="lan lanf"></div>
+				</li>
+				<li>
+					<p>10.8</p>
+					<div class="bai baig"></div>
+					<div class="lan lang"></div>
+				</li>
+				<li>
+					<p>10.9</p>
+					<div class="bai baih"></div>
+					<div class="lan lanh"></div>
+				</li>
+			</ul>
+			
+		</div>
+		<p class="samll">国庆中秋“黄金周”8天杭州搜索热度</p>
+		<div class="arrow"><img src="img/arrow.png" alt="" /></div>
+	</div>
+</body>
+</html>

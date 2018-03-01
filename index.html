@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+</head>
+<style>
+	.bigbox{
+		width: 100vw;
+		height: 100vh;
+		background: url(img/index.jpg);
+		position: relative;
+		background-size: contain;
+	}
+	.qiu{
+	    position: absolute;
+	    top: 1.2rem;
+	    width: 1.6rem;
+	    left: 2.9rem;
+	}
+	p{
+	    width: 100%;
+	    color: #fff;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    top: 6.5rem;
+	    text-align: center;
+	    letter-spacing: 0.03rem;
+	}
+	.zi{
+		font-size: 0.6rem;
+	    width: 6.3rem;
+	    position: absolute;
+	    top: 6.8rem;
+	    left: 0.6rem;
+	    text-align: center;
+	    color:#6AE7FF;
+	}
+	.xie{
+		position: absolute;
+	    top: 5.6rem;
+	    width: 7.5rem;
+	}
+	.xie img{
+		width: 100%;
+	}
+	.arrow{
+	    position: absolute;
+	    top: 12rem;
+	    width: 0.5rem;
+	    left: 3.5rem;
+	}
+	.arrow img{
+		width: 100%;
+	}
+</style>
+<body>
+	<div class="bigbox">
+		
+		<div class="qiu">
+			<img src="img/qiu.png" alt="" />
+		</div>
+		
+		<p>今天杭州市旅游委员会发布</p>
+		<div class="zi">2017年国庆中秋黄金周大数据分析报告</div>
+		
+		<div class="xie">
+			<img src="img/xie.png" alt="" />
+		</div>
+		
+		<div class="arrow">
+			<img src="img/arrow.png"/>
+		</div>
+	</div>
+</body>
+</html>

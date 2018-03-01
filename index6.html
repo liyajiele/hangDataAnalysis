@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/function.js"></script>
+    <script>
+		$(function(){
+		    var clienW=document.documentElement.clientWidth;
+		    var originW=750;//设计尺寸
+		    var bili=clienW/originW*100+"px";
+		    document.querySelector("html").style.fontSize=bili;
+		})
+	</script>
+</head>
+<style>
+	.bigbox{
+		width: 100vw;
+		height: 100vh;
+		background: url(img/back.jpg);
+		position: relative;
+		background-size: contain;
+	}
+	.top{
+	    width: 6.5rem;
+	    position: absolute;
+	    top: 0.5rem;
+	    left: 0.35rem;
+	}
+	.top img{
+		float: left;
+		margin-right: 0.1rem;
+	}
+	.top p{
+		float: left;
+		color: #FFFFFF;
+		font-size: 0.15rem;
+		line-height: 0.5rem;
+	}
+	.top span{
+		color: #6AE7FF;
+		font-size: 0.3rem;
+	}
+	.biaodic{
+		width: 6.5rem;
+	    position: absolute;
+	    top: 1.54rem;
+	    left: 0.35rem;
+	}
+	.biaodic img{
+		width: 100%;
+	}
+	.biaodic p{
+		color: #fff;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    top: 0.5rem;
+	    right: 0.1rem;
+	}
+	.city{
+		width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0.5rem;
+	}
+	.city li{
+		width: 1.2rem;
+	    height: 100%;
+	    position: relative;
+	    float: left;
+	}
+	.city img{
+		width: 0.4rem;
+	    position: absolute;
+	    bottom: 1rem;
+	    left: 0.4rem;
+	}
+	.city span{
+		color: #fff;
+	    width: 1.2rem;
+	    font-size: 0.15rem;
+	    position: absolute;
+	    bottom: 0.5rem;
+	    text-align: center;
+	}
+	.kuang{
+		background: url(img/zhai.png);
+	    position: absolute;
+	    top: 6rem;
+	    width: 6.8rem;
+	    left: 0.35rem;
+	    text-align: center;
+	    font-size: 0.3rem;
+	    line-height: 1.5rem;
+	    height: 1.5rem;
+	    background-size: cover;
+	    color: #6AE7FF;
+	}
+	.ju{
+		background: url(img/ju.png);
+	    position: absolute;
+	    top: 0.8rem;
+	    left: 0.45rem;
+	    width: 6.5rem;
+	    background-size: contain;
+	    height: 3.5rem;
+	}
+	.ju p{
+		font-size: 0.3rem;
+	    color: #fff;
+	    top: 0.2rem;
+	    position: absolute;
+	    left: 0.4rem;
+	}
+	.ju h4{
+		font-size: 0.15rem;
+	    color: #fff;
+	    position: absolute;
+	    top: 0.7rem;
+	    left: 0.4rem;
+		}
+	.jiimg{
+		position: absolute;
+	    top: 1.3rem;
+	    width: 100%;
+	}
+	.jiimg li{
+	    width: 33.3%;
+	    float: left;
+	    height: 3rem;
+	}
+	.jiimg img{
+		width: 1.5rem;
+		margin-left: 0.2rem;
+	}
+	.jiimg span{
+		width: 100%;
+	    color: #fff;
+	    font-size: 0.15rem;
+	    display: block;
+	    text-align: center;
+	}
+	.zi{
+		width: 6.5rem;
+	    position: absolute;
+	    top: 7.5rem;
+	    color: #fff;
+	    font-size: 0.15rem;
+	    left: 0.35rem;
+	}
+	.arrow{
+	    position: absolute;
+	    top: 12rem;
+	    width: 0.5rem;
+	    left: 3.5rem;
+	}
+	.arrow img{
+		width: 100%;
+	}
+</style>
+<body>
+	<div class="bigbox">
+		<div class="ju">
+			<p>旅游商圈</p>
+			<h4>来杭游客人均入住天数达到3.5天，更多游客选择增加时间逗留。</h4>
+			<ul class="jiimg">
+				<li><img src="img/xihu.png" alt="" /><span>西湖区</span></li>
+				<li><img src="img/jiang.png" alt="" /><span>江干区</span></li>
+				<li><img src="img/shang.png" alt="" /><span>上城区</span></li>
+			</ul>
+		</div>
+		<p class="zi">今年机票、酒店预定量同比增长20%，度假产品、火车票预定量涨幅更大。</p>
+		
+		<div class="kuang">
+					OTA预定火热，同比大幅增长
+		</div>
+		
+		<p></p>
+		
+		<div class=""></div>
+		
+		
+		<div class="arrow">
+			<img src="img/arrow.png" alt="" />
+		</div>
+	</div>
+</body>
+</html>
